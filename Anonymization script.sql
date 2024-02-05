@@ -1,5 +1,5 @@
 
-UPDATE HIFIS_Addresses SET HIFIS_Addresses.MetaDataSearch = LEFT(NEWID(), LEN(HIFIS_Addresses.MetaDataSearch)/2) + LEFT(ABS(CHECKSUM(NEWID())), LEN(HIFIS_Addresses.MetaDataSearch)/2)
+--UPDATE HIFIS_Addresses SET HIFIS_Addresses.MetaDataSearch = LEFT(NEWID(), LEN(HIFIS_Addresses.MetaDataSearch)/2) + LEFT(ABS(CHECKSUM(NEWID())), LEN(HIFIS_Addresses.MetaDataSearch)/2)
 UPDATE HIFIS_Appointments SET HIFIS_Appointments.Comments = LEFT(NEWID(), LEN(HIFIS_Appointments.Comments)/2) + LEFT(ABS(CHECKSUM(NEWID())), LEN(HIFIS_Appointments.Comments)/2)
 UPDATE HIFIS_Appointments SET HIFIS_Appointments.Description = LEFT(NEWID(), LEN(HIFIS_Appointments.Description)/2) + LEFT(ABS(CHECKSUM(NEWID())), LEN(HIFIS_Appointments.Description)/2)
 UPDATE HIFIS_ArmyServicePeriods SET HIFIS_ArmyServicePeriods.VACCaseWorker = LEFT(NEWID(), LEN(HIFIS_ArmyServicePeriods.VACCaseWorker)/2) + LEFT(ABS(CHECKSUM(NEWID())), LEN(HIFIS_ArmyServicePeriods.VACCaseWorker)/2)
