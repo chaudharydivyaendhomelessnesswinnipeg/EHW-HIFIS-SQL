@@ -12,7 +12,7 @@
         ,HIFIS_Program_ServiceProviders.Comments AS "Prog at Comments"
         ,HIFIS_Organizations.ClusterID AS "Cluster ID#"
          FROM [HIFIS_prod].[dbo].[HIFIS_Programs]
-  JOIN HIFIS_Program_ServiceProviders on HIFIS_Programs.ProgramID = HIFIS_Program_ServiceProviders.ProgramID
+  --JOIN HIFIS_Program_ServiceProviders on HIFIS_Programs.ProgramID = HIFIS_Program_ServiceProviders.ProgramID
   JOIN HIFIS_ProgramTypes on HIFIS_Programs.ProgramTypeID = HIFIS_ProgramTypes.ID
   JOIN HIFIS_Organizations on HIFIS_Program_ServiceProviders.OrganizationID = HIFIS_Organizations.OrganizationID
   JOIN HIFIS_Cluster on HIFIS_Organizations.ClusterID = HIFIS_Cluster.ClusterID
